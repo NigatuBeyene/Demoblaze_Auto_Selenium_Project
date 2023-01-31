@@ -18,14 +18,14 @@ class Contact_Detail:
         self.Send_messageXPath = Contact_Id.SEND_MESSAGE
 
     @allure.step
-    @allure.description('Clear and insert data to password input')
+    @allure.description('click_on_contact_button')
     def click_on_contact_button(self):
         self.driver.find_element(By.XPATH, self.contact_button).click()
         # self.driver.implicitly_wait(100)
         time.sleep(2)
 
     @allure.step
-    @allure.description('Clear and insert data to email input')
+    @allure.description('enter_user_email')
     def enter_user_email(self, User_email):
         email = self.driver.find_element(By.ID, self.emailID)
         email.clear()
@@ -36,7 +36,7 @@ class Contact_Detail:
         return email
 
     @allure.step
-    @allure.description('Clear and insert data to contact name input')
+    @allure.description("enter_contact_name")
     def enter_contact_name(self, User_name):
         username = self.driver.find_element(By.ID, self.nameID)
         username.clear()
@@ -46,7 +46,7 @@ class Contact_Detail:
         return username
 
     @allure.step
-    @allure.description('Clear and insert data to message input')
+    @allure.description('write_message')
     def write_message(self, User_message):
         message = self.driver.find_element(By.ID, self.messageID)
         message.clear()
@@ -56,7 +56,7 @@ class Contact_Detail:
         return message
 
     @allure.step
-    @allure.description('Clear and insert data to password input')
+    @allure.description('click_send_message')
     def click_send_message(self):
         self.driver.find_element(By.XPATH, self.Send_messageXPath).click()
         self.driver.implicitly_wait(10)

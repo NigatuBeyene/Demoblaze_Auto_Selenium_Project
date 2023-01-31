@@ -12,7 +12,7 @@ from Web.Base_test.base_test import Base_test
 class Test_Contact_Page(Base_test):
 
     @allure.description('contact page test')
-    @pytest.mark.regression
+    @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
     def test_coutact_us_valid(self):
         driver = self.driver
