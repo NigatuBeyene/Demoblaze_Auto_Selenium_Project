@@ -14,7 +14,8 @@ class cart_steps():
         self.home_button = cart_xpath.HOME_BUTTON
         self.categories_button = cart_xpath.CATEGORIES
         self.phone_button = cart_xpath.PHONE
-        self.samsung_galaxy = cart_xpath.SAMSUNG_GALAXY
+        self.samsung_galaxy_s6 = cart_xpath.SAMSUNG_GALAXY_s6
+        self.samsung_galaxy_s7 = cart_xpath.SAMSUNG_GALAXY_s7
         self.add_to_cart = cart_xpath.ADD_TO_CART
 
 
@@ -44,11 +45,21 @@ class cart_steps():
 
 
     @allure.step
-    @allure.description('click_on_samsung_galaxyssword')
-    def click_on_samsung_galaxyssword(self):
-        self.driver.find_element(By.XPATH, self.samsung_galaxy).click()
+    @allure.description('click_on_samsung_galaxyssword_s6')
+    def click_on_samsung_galaxyssword_s6(self):
+        self.driver.find_element(By.XPATH, self.samsung_galaxy_s6).click()
         self.driver.implicitly_wait(10)
         time.sleep(2)
+
+
+
+    @allure.step
+    @allure.description('click_on_samsung_galaxyssword_s7')
+    def click_on_samsung_galaxyssword_s7(self):
+        self.driver.find_element(By.XPATH, self.samsung_galaxy_s7).click()
+        self.driver.implicitly_wait(10)
+        time.sleep(2)
+
 
 
     @allure.step

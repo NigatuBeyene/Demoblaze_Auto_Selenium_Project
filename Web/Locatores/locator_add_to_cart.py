@@ -6,7 +6,8 @@ class cart_xpath():
     LAPTOP = "//a[contains(text(),'Laptops')]"
     MONITORS = "//a[contains(text(),'Monitors')]"
     PRODUCT_STORE = "//a[@id='nava']"
-    SAMSUNG_GALAXY = "//a[contains(text(),'Samsung galaxy s6')]"
+    SAMSUNG_GALAXY_s6 = "//a[contains(text(),'Samsung galaxy s6')]"
+    SAMSUNG_GALAXY_s7 = "//a[contains(text(),'Samsung galaxy s7')]"
     NEXT_BUTTON = "//body/nav[@id='narvbarx']/div[@id='contcar']/div[@id='carouselExampleIndicators']/a[1]/span[1]"
     ADD_TO_CART = "//a[contains(text(),'Add to cart')]"
 

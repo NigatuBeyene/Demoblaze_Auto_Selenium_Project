@@ -24,7 +24,7 @@ class Test_Place_Order(Base_test):
         home.wait = WebDriverWait(self.driver, 10)
         home.click_on_categories()
         home.click_on_phone()
-        home.click_on_samsung_galaxyssword()
+        home.click_on_samsung_galaxyssword_s6()
         home.click_on_add_to_cart()
         home.alert = driver.switch_to.alert
         home.alert.accept()
@@ -51,7 +51,7 @@ class Test_Place_Order(Base_test):
         home.wait = WebDriverWait(self.driver, 10)
         home.click_on_categories()
         home.click_on_phone()
-        home.click_on_samsung_galaxyssword()
+        home.click_on_samsung_galaxyssword_s6()
         home.click_on_add_to_cart()
         home.alert = driver.switch_to.alert
         home.alert.accept()
