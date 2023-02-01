@@ -23,9 +23,6 @@ class Test_Contact_Page(Base_test):
         contact.write_message("let's start")
         contact.click_send_message()
 
-
-
-
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -33,13 +30,10 @@ class Test_Contact_Page(Base_test):
         driver = self.driver
         contact = Contact_Detail(driver)
         contact.click_on_contact_button()
-        contact.enter_user_email("Beyene@.com")
+        contact.enter_user_email("beyenenigatu@.com")
         contact.enter_contact_name("nigatu")
         contact.write_message("let's start")
         contact.click_send_message()
-
-
-
 
     @allure.description('contact page test')
     @pytest.mark.sanity
@@ -53,9 +47,6 @@ class Test_Contact_Page(Base_test):
         contact.write_message("let's start")
         contact.click_send_message()
 
-
-
-
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -67,9 +58,6 @@ class Test_Contact_Page(Base_test):
         contact.enter_contact_name("nigatu")
         contact.write_message("")
         contact.click_send_message()
-
-
-
 
     @allure.description('contact page test')
     @pytest.mark.sanity
@@ -83,9 +71,6 @@ class Test_Contact_Page(Base_test):
         contact.write_message("let's start")
         contact.click_send_message()
 
-
-
-
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -93,11 +78,10 @@ class Test_Contact_Page(Base_test):
         driver = self.driver
         contact = Contact_Detail(driver)
         contact.click_on_contact_button()
-        contact.enter_user_email("Beyene@gmail.com")
+        contact.enter_user_email("beyene@gmail.com")
         contact.enter_contact_name("")
         contact.write_message("let's start")
         contact.click_send_message()
-
 
     @allure.description('contact page test')
     @pytest.mark.sanity
@@ -111,7 +95,6 @@ class Test_Contact_Page(Base_test):
         contact.write_message("let's start")
         contact.click_send_message()
 
-
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -123,6 +106,7 @@ class Test_Contact_Page(Base_test):
         contact.enter_contact_name("")
         contact.write_message("")
         contact.click_send_message()
+
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -134,6 +118,7 @@ class Test_Contact_Page(Base_test):
         contact.enter_contact_name("nigatu")
         contact.write_message("")
         contact.click_send_message()
+
     @allure.description('contact page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -145,17 +130,3 @@ class Test_Contact_Page(Base_test):
         contact.enter_contact_name("")
         contact.write_message("")
         contact.click_send_message()
-
-
-
-
-
-
-
-
-
-
-
-
-
-

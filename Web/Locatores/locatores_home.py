@@ -1,4 +1,4 @@
-class home_xpath():
+class home_xpath:
     HOME_BUTTON = "//body/nav[@id='narvbarx']/div[@id='navbarExample']/ul[1]/li[1]/a[1]"
     CONTACT_BUTTON = "//a[contains(text(),'Contact')]"
     LOGIN_BUTTON = "//a[@id='login2']"  ## XPATH

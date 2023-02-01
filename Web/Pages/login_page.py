@@ -23,11 +23,9 @@ class Login_Steps():
         self.driver.implicitly_wait(100)
         time.sleep(2)
 
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
-    def enter_fist_name(self, User_name):
-        # Utils(self.driver).assertion(self.driver.current_url)
+    def enter_fist_name(self, User_name: str):
         username = self.driver.find_element(By.ID, self.nameID)
         username.clear()
         username.send_keys(User_name)
@@ -36,10 +34,9 @@ class Login_Steps():
         Utils(self.driver).assertion(User_name, username.get_attribute('value'))
         return username
 
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
-    def enter_password(self, User_password):
+    def enter_password(self, User_password: str):
         userpassword = self.driver.find_element(By.ID, self.passwordID)
         userpassword.clear()
         userpassword.send_keys(User_password)
@@ -52,4 +49,6 @@ class Login_Steps():
         self.driver.find_element(By.XPATH, self.login_click).click()
         self.driver.implicitly_wait(10)
         time.sleep(2)
-
+        self.driver.switch_to.alert.accept()
+        title = self.driver.title
+        assert title == "STORE"

@@ -15,12 +15,14 @@ class SignUp_Steps():
         self.nameID = SignUp_Id.NAME
         self.passwordID = SignUp_Id.PASSWORD
         self.login_click = SignUp_Id.SIGNIN_CLICK
+        self.title = "STORE"
 
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_signin_button(self):
         self.driver.find_element(By.XPATH, self.login_button).click()
         self.driver.implicitly_wait(100)
+        Utils(self.driver).assertion(self.title,self.driver.title)
         time.sleep(2)
 
 
@@ -34,7 +36,6 @@ class SignUp_Steps():
         time.sleep(2)
         Utils(self.driver).assertion(User_name, username.get_attribute('value'))
         return username
-
 
     @allure.step
     @allure.description('Clear and insert data to contact name input')
@@ -51,4 +52,5 @@ class SignUp_Steps():
         self.driver.find_element(By.XPATH, self.login_click).click()
         self.driver.implicitly_wait(10)
         time.sleep(2)
+
 

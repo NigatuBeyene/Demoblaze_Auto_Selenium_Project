@@ -1,4 +1,4 @@
-class SignUp_Id():
+class SignUp_Id:
     SIGNUP_BUTTON = "//a[@id='signin2']"
     NAME = "sign-username"
     PASSWORD = "sign-password"

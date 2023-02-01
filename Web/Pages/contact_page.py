@@ -21,7 +21,6 @@ class Contact_Detail:
     @allure.description('click_on_contact_button')
     def click_on_contact_button(self):
         self.driver.find_element(By.XPATH, self.contact_button).click()
-        # self.driver.implicitly_wait(100)
         time.sleep(2)
 
     @allure.step

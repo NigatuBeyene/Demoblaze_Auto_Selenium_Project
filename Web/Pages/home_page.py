@@ -24,8 +24,6 @@ class home_menus():
         self.next_button = home_xpath.NEXT_BUTTON
         self.previous_button = home_xpath.PREVIOUS_BUTTON
 
-
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_home_button(self):
@@ -54,7 +52,6 @@ class home_menus():
         self.driver.implicitly_wait(100)
         time.sleep(2)
 
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_categories(self):
@@ -69,15 +66,12 @@ class home_menus():
         self.driver.implicitly_wait(10)
         time.sleep(2)
 
-
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_laptop_category(self):
         self.driver.find_element(By.XPATH, self.laptop).click()
         self.driver.implicitly_wait(10)
         time.sleep(2)
-
 
     @allure.step
     @allure.description('Clear and insert data to contact name input')
@@ -93,7 +87,6 @@ class home_menus():
         self.driver.implicitly_wait(10)
         time.sleep(2)
 
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_next_button(self):
@@ -101,18 +94,9 @@ class home_menus():
         self.driver.implicitly_wait(10)
         time.sleep(2)
 
-
     @allure.step
     @allure.description('Clear and insert data to contact name input')
     def click_on_previous_button(self):
         self.driver.find_element(By.ID, self.previous_button).click()
         self.driver.implicitly_wait(10)
         time.sleep(2)
-
-
-
-
-
-
-
-

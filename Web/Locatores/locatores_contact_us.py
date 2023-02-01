@@ -1,4 +1,4 @@
-class Contact_Id():
+class Contact_Id:
     CONTACT_BUTTON = "//a[contains(text(),'Contact')]"
     EMAIL = "recipient-email"
     NAME = "recipient-name"

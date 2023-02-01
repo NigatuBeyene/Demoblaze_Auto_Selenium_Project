@@ -58,4 +58,3 @@ class Test_Contact_Page(Base_test):
         signin.enter_fist_name("")
         signin.enter_password("")
         signin.click_signin()
-

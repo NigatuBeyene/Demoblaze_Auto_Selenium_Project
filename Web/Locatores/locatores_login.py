@@ -1,4 +1,4 @@
-class Login_Id():
+class Login_Id:
 
     LOGIN_BUTTON = "//a[@id='login2']" ## XPATH
     NAME = "loginusername"

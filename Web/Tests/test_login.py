@@ -65,7 +65,7 @@ class Test_Contact_Page(Base_test):
     @allure.description('login page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
-    def test_signin_invalid_password_input_none(self):
+    def test_login_invalid_password_input_none(self):
         driver = self.driver
         login = Login_Steps(driver)
         login.click_on_login_button()
@@ -73,6 +73,22 @@ class Test_Contact_Page(Base_test):
         login.enter_fist_name("nigatu")
         login.enter_password("")
         login.click_login()
+
+
+
+    @allure.description('login page test')
+    @pytest.mark.sanity
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_login_invalid_both_name_and_password_input_none(self):
+        driver = self.driver
+        login = Login_Steps(driver)
+        login.click_on_login_button()
+        login.wait = WebDriverWait(self.driver, 10)
+        login.enter_fist_name("")
+        login.enter_password("")
+        login.click_login()
+
+
 
 
 

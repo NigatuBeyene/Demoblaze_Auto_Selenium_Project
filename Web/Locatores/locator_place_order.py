@@ -1,14 +1,12 @@
-class Place_Order():
-   CART = "//a[contains(text(),'Cart')]"
-   PLACE_ORDER = "//button[contains(text(),'Place Order')]"
-   NAME = "name"
-   COUNTRY = "country"
-   CITY = "city"
-   CREDIT_CARD = "card"
-   MONTH = "month"
-   YEAR = "year"
-   PURCHASE = "//button[contains(text(),'Purchase')]"
-   CLOSE = "//body/div[@id='orderModal']/div[1]/div[1]/div[3]/button[1]"
-
-
-
+class Place_Order:
+    CART = "//a[contains(text(),'Cart')]"
+    REMOVE = "div.row div.col-lg-8 div.table-responsive:nth-child(2) table.table.table-bordered.table-hover.table-striped tbody:nth-child(2) tr.success td:nth-child(4) > a:nth-child(1)"
+    PLACE_ORDER = "//button[contains(text(),'Place Order')]"
+    NAME = "name"
+    COUNTRY = "country"
+    CITY = "city"
+    CREDIT_CARD = "card"
+    MONTH = "month"
+    YEAR = "year"
+    PURCHASE = "//button[contains(text(),'Purchase')]"
+    CLOSE = "//body/div[@id='orderModal']/div[1]/div[1]/div[3]/button[1]"

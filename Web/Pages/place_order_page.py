@@ -13,6 +13,7 @@ class place_order():
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 10)
         self.cart = Place_Order.CART
+        self.removing = Place_Order.REMOVE
         self.place_order = Place_Order.PLACE_ORDER
         self.name = Place_Order.NAME
         self.country = Place_Order.COUNTRY
@@ -33,6 +34,12 @@ class place_order():
     def varify_cart_clickable(self):
         self.driver.find_element(By.XPATH, self.cart).click()
         time.sleep(1)
+
+    @allure.step
+    @allure.description('varify_cart_clickable')
+    def varify_product_removed_from_the_cart(self):
+        self.driver.find_element(By.CSS_SELECTOR, self.removing).click()
+        time.sleep(2)
 
     @allure.step
     @allure.description('varify_place_order_clickable')

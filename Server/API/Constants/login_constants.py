@@ -1,7 +1,8 @@
 
 
 class LoginConstants:
-    url_login = 'https://trip-yoetz.herokuapp.com/auth/login'
+    url_login = 'https://www.demoblaze.com/index.html'
+
     success_key = 'success'
     message_key = 'message'
     data_valid = {"email": "Yosef@gmail.com", "password": "123456"}

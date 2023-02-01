@@ -15,7 +15,6 @@ class Test_Home_Page(Base_test):
         login = home_menus(driver)
         login.click_on_home_button()
 
-
     @allure.description('home page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -23,7 +22,6 @@ class Test_Home_Page(Base_test):
         driver = self.driver
         login = home_menus(driver)
         login.click_on_contact_button()
-
 
     @allure.description('home page test')
     @pytest.mark.sanity
@@ -33,7 +31,6 @@ class Test_Home_Page(Base_test):
         login = home_menus(driver)
         login.click_on_login_button()
 
-
     @allure.description('home page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -41,7 +38,6 @@ class Test_Home_Page(Base_test):
         driver = self.driver
         login = home_menus(driver)
         login.click_on_signup_button()
-
 
     @allure.description('home page test')
     @pytest.mark.sanity
@@ -51,7 +47,6 @@ class Test_Home_Page(Base_test):
         login = home_menus(driver)
         login.click_on_categories()
 
-
     @allure.description('home page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -59,7 +54,6 @@ class Test_Home_Page(Base_test):
         driver = self.driver
         login = home_menus(driver)
         login.click_on_phone_category()
-
 
     @allure.description('home page test')
     @pytest.mark.sanity
@@ -83,8 +77,7 @@ class Test_Home_Page(Base_test):
     def test_verify_samsung_galaxyssword_link_clickable(self):
         driver = self.driver
         login = home_menus(driver)
-        login.click_on_laptop_category()
-
+        login.click_on_samsung_galaxyssword_link()
 
     @allure.description('home page test')
     @pytest.mark.sanity
@@ -94,9 +87,6 @@ class Test_Home_Page(Base_test):
         login = home_menus(driver)
         login.click_on_next_button()
 
-
-
-
     @allure.description('home page test')
     @pytest.mark.sanity
     @allure.severity(allure.severity_level.NORMAL)
@@ -104,6 +94,3 @@ class Test_Home_Page(Base_test):
         driver = self.driver
         login = home_menus(driver)
         login.click_on_previous_button()
-
-
-
