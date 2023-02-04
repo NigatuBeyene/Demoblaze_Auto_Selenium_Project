@@ -1,11 +1,11 @@
 
+class Login_Id:
 
-class LoginConstants:
-    url_login = 'https://www.demoblaze.com/index.html'
-
-    success_key = 'success'
-    message_key = 'message'
-    data_valid = {"email": "Yosef@gmail.com", "password": "123456"}
-    data_invalid_password = {"email": "Yosef@gmail.com", "password": "6116161616"}
-    data_invalid_email = {"email": "m@fg", "password": "123456"}
-    data_invalid_password_and_email = {"email": "m@fg", "password": "1223231184"}
+    URL = "https://api.demoblaze.com/login"
+    LOGIN_BUTTON = "//a[@id='login2']" ## XPATH
+    NAME = "loginusername"
+    PASSWORD = "loginpassword"
+    LOGIN_CLICK = "//button[contains(text(),'Log in')]"
+    data_valid = {"username":"nigatu","password":"MzIxNA=="}
+    data_invalid_user = {"username":"wertyu","password":"MzIxNA=="}
+    data_invalid_password = {"username":"nigatu","password":"NA=="}

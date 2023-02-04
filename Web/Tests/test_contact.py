@@ -1,9 +1,5 @@
 import allure
 import pytest
-
-from selenium.webdriver.chrome.webdriver import WebDriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from Web.Pages.contact_page import Contact_Detail
 from Web.Utils.utils import *
 from Web.Base_test.base_test import Base_test

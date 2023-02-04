@@ -56,7 +56,9 @@ class Contact_Detail:
 
     @allure.step
     @allure.description('click_send_message')
-    def click_send_message(self):
+    def click_send_message(self, message):
         self.driver.find_element(By.XPATH, self.Send_messageXPath).click()
         self.driver.implicitly_wait(10)
+        Utils(self.driver).assertion(message, self.Send_messageXPath.get_attribute('value'))
         time.sleep(2)
+
